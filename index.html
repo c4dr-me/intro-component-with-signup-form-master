@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Intro component with sign up form</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <section class="title">
+        <h1>Learn to code by watching others</h1>
+        <p>
+          See how experienced developers solve problems in real-time. Watching
+          scripted tutorials is great, but understanding how developers think is
+          invaluable.
+        </p>
+      </section>
+      <section class="form">
+        <div class="trialMsg">
+          <p class="trialTxt">
+            <span>Try it free 7 days </span>&nbsp;then $20/mo. thereafter
+          </p>
+        </div>
+        <form action="" novalidate>
+          <div class="input-container">
+            <input
+              type="text"
+              placeholder="First Name"
+              name="FirstName"
+              class="FnameInput"
+              autocomplete="off"
+              required
+            />
+            <img
+              class="invalid-icon"
+              src="images/icon-error.svg"
+              id="fNameErrorIcon"
+              alt=""
+            />
+            <span class="error sr-only" id="firstNameError"
+              >First Name cannot be empty</span
+            >
+          </div>
+
+          <div class="input-container">
+            <input
+              type="text"
+              placeholder="Last Name"
+              name="LastName"
+              class="LnameInput"
+              autocomplete="off"
+              required
+            />
+            <img
+              class="invalid-icon"
+              src="images/icon-error.svg"
+              id="lastNameErrorIcon"
+              alt=""
+            />
+            <span class="error sr-only" id="lastNameError"
+              >Last Name cannot be empty</span
+            >
+          </div>
+
+          <div class="input-container">
+            <input
+              type="email"
+              placeholder="Email Address"
+              name="EmailAddress"
+              class="EmailInput"
+              autocomplete="off"
+              required
+            />
+            <img
+              class="invalid-icon"
+              src="images/icon-error.svg"
+              id="EmailErrorIcon"
+              alt=""
+            />
+            <span class="error sr-only" id="emailError"
+              >Looks like this is not an email</span
+            >
+          </div>
+
+          <div class="input-container">
+            <input
+              type="password"
+              placeholder="Password"
+              name="Password"
+              class="PassInput"
+              autocomplete="off"
+              required
+            />
+            <img
+              class="invalid-icon"
+              src="images/icon-error.svg"
+              id="PassErrorIcon"
+              alt=""
+            />
+            <span class="error sr-only" id="passwordError"
+              >Password cannot be empty</span
+            >
+          </div>
+
+          <button type="submit" class="btn btn-submit">
+            Claim your free trial
+          </button>
+          <p class="agreement">
+            By clicking the button, you are agreeing to our
+            <a href="#" class="tnc">Terms and Services</a>
+          </p>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">c4dr-me</a>.
+      </p>
+    </footer>
+  </body>
+  <script src="script.js"></script>
+</html>
