@@ -180,6 +180,7 @@ button:hover {
 
 /* Attribution section styles */
 .attribution {
+    font-weight: bold;
     font-size: 11px;
     text-align: center;
 }
