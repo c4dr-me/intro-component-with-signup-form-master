@@ -9,10 +9,10 @@ submitBtn.addEventListener("click", function (e) {
     const pwd = document.getElementById("Password");
     const email = document.getElementById("EmailAddress");
 
-    const ErrorFirstName = document.getElementById("firstNameError");
-    const ErrorLastName = document.getElementById("lastNameError");
-    const ErrorPassword = document.getElementById("passwordError");
-    const ErrorEmail = document.getElementById("emailError");
+    const ErrorFirstName = document.getElementById("firstNameTextError");
+    const ErrorLastName = document.getElementById("lastNameTextError");
+    const ErrorPassword = document.getElementById("passwordTextError");
+    const ErrorEmail = document.getElementById("emailTextError");
 
     const ErrorFirstNameIcon = document.getElementById("fNameErrorIcon");
     const ErrorLastNameIcon = document.getElementById("lastNameErrorIcon");

@@ -153,12 +153,13 @@ button {
 }
 
 /* Error message styles */
-.error {
+.error-text {
     color: hsl(0, 100%, 74%);
     text-align: right;
     font-size: 0.7rem;
     display: none;
 }
+
 
 .error-border {
     border-color: hsl(0, 100%, 74%);
