@@ -36,13 +36,16 @@
         </div>
         <form action="" novalidate>
           <div class="input-container">
+            <label for="FirstName" class="sr-only">First Name</label>
             <input
               type="text"
               placeholder="First Name"
+              id="FirstName"
               name="FirstName"
               class="FnameInput"
               autocomplete="off"
               required
+              aria-describedby="firstNameError"
             />
             <img
               class="invalid-icon"
@@ -50,19 +53,22 @@
               id="fNameErrorIcon"
               alt=""
             />
-            <span class="error sr-only" id="firstNameError"
-              >First Name cannot be empty</span
-            >
+            <div id="firstNameError" aria-live="assertive">
+              <span class="error">First Name cannot be empty</span>
+            </div>
           </div>
 
           <div class="input-container">
+            <label for="LastName" class="sr-only">Last Name</label>
             <input
               type="text"
               placeholder="Last Name"
+              id="LastName"
               name="LastName"
               class="LnameInput"
               autocomplete="off"
               required
+              aria-describedby="lastNameError"
             />
             <img
               class="invalid-icon"
@@ -70,19 +76,22 @@
               id="lastNameErrorIcon"
               alt=""
             />
-            <span class="error sr-only" id="lastNameError"
-              >Last Name cannot be empty</span
-            >
+            <div id="lastNameError" class="error" aria-live="assertive">
+              <span class="error">Last Name cannot be empty</span>
+            </div>
           </div>
 
           <div class="input-container">
+            <label for="EmailAddress" class="sr-only">Email Address</label>
             <input
               type="email"
               placeholder="Email Address"
+              id="EmailAddress"
               name="EmailAddress"
               class="EmailInput"
               autocomplete="off"
               required
+              aria-describedby="emailError"
             />
             <img
               class="invalid-icon"
@@ -90,19 +99,22 @@
               id="EmailErrorIcon"
               alt=""
             />
-            <span class="error sr-only" id="emailError"
-              >Looks like this is not an email</span
-            >
+            <div id="emailError" class="error" aria-live="assertive">
+              <span class="error">Looks like this is not an email</span>
+            </div>
           </div>
 
           <div class="input-container">
+            <label for="Password" class="sr-only">Password</label>
             <input
               type="password"
               placeholder="Password"
+              id="Password"
               name="Password"
               class="PassInput"
               autocomplete="off"
               required
+              aria-describedby="passwordError"
             />
             <img
               class="invalid-icon"
@@ -110,9 +122,9 @@
               id="PassErrorIcon"
               alt=""
             />
-            <span class="error sr-only" id="passwordError"
-              >Password cannot be empty</span
-            >
+            <div id="passwordError" class="error" aria-live="assertive">
+              <span class="error"> Password cannot be empty</span>
+            </div>
           </div>
 
           <button type="submit" class="btn btn-submit">
